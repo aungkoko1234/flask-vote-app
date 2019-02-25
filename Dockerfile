@@ -9,7 +9,7 @@ MAINTAINER Stephen Bylo <StephenBylo@gmail.com>
 WORKDIR /app
 
 # Install python and pip
-#RUN yum -y update && yum -y install epel-release && yum -y install python-pip && yum -y clean all
+RUN yum -y update && yum -y install epel-release && yum -y install python-pip && yum -y clean all
 RUN                   yum -y install epel-release && yum -y install python-pip && yum -y clean all
 
 # Install MySQL-python (app dependencies) 
